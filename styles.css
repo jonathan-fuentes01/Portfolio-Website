@@ -22,7 +22,7 @@ body{
 a{
     color: var(--text-color);
     text-decoration: none;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 nav{
@@ -43,14 +43,21 @@ nav{
     border-radius: 15px;
     font-weight: normal;
     font-family: Montserrat;
-    transition: all 500ms;
     z-index: 99;
 }
 
- nav a:hover{
-    font-size:20px;
-    font-size-adjust:20px;
-    transition-delay:200ms;
+hr{
+    color:#fffefe;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    width: 9%;
+    
+    height: 5px;
+
+    border-radius:10px;
+    background-color:#fffefe;
 }
 
 /*ABOUT ME SECTION */
@@ -100,7 +107,11 @@ nav{
     font-size: 20px;
     color: var(--text-color);
 }
-
+#About hr{
+    visibility: hidden;
+    font-size: 0;
+    margin: 0 auto;
+}
 
 /*PROJECTS SECTION*/
 
@@ -124,20 +135,6 @@ nav{
     font-family: Open Sans, sans-serif;
     padding-left:20px;
     margin-bottom: 50px;
-}
-
-hr{
-    color:#fffefe;
-    
-    margin-top:30px;
-    margin-left:900px;
-    margin-bottom: 100px;
-    margin-right:900px;
-    
-    height: 5px;
-
-    border-radius:10px;
-    background-color:#fffefe;
 }
 
 div.scroll-container{
@@ -255,7 +252,7 @@ div.icons{
     font-size: 100px;
     color:var(--text-color);
     transition: all 500ms;
-    margin-bottom:200px;
+    margin-bottom:100px;
 }
 div.icons i:hover{
     font-size: 110px;
@@ -315,9 +312,11 @@ div.icons:hover img{
     margin-top: 100px;
 }
 #Contact iframe{
-    margin-bottom: 100px;
-    margin-top:100px;
-    margin-left:420px;
+    display:block;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%
 }
 div.iconic{
     margin-left: 30px;
@@ -346,4 +345,3 @@ div.iconic i{
 #Copyright a{
     text-decoration: underline;
 }
-
