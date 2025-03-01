@@ -13,7 +13,20 @@
 html{
     scroll-behavior: smooth;
 }
-
+html::-webkit-scrollbar{
+    width:16px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color:#303130;
+    border-radius:10px;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(39, 37, 37)
+}
+html::-webkit-scrollbar-track{
+    background-color:#5e5e5e;
+    border-radius:10px;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
@@ -159,74 +172,16 @@ div.scroll-container img:hover{
     width: 550px;
     height: 600px;
 }
-
-.tool-tip{
-    display:inline-block;
-    position:relative;
+div.scroll-container::-webkit-scrollbar{
+    width:16px;
 }
-
-.tool-tip .tooltip-text{
-    position: absolute;
-    visibility:hidden;
-    width:350px;
-    height: 250px;
-    background-color:rgba(91, 104, 112, 0.9);
-    color: var(--text-color);
-    border-radius: 10px;
-    opacity:0;
-    transition: opacity 1s;
+div.scroll-container::-webkit-scrollbar-thumb{
+    background-color:#555555;
+    border-radius:10px;
 }
-.tool-tip:hover .tooltip-text{
-    visibility:visible;
-    transition-delay:300ms;
-    opacity: 1;
-    z-index: 2;
-} 
-.tooltip-text p{
-    vertical-align:top;
-    text-align:center;
-    align-items:center;
-    text-wrap: balance;
-    font-size:15px;
-    padding-right:25px;
-    font-family: Open Sans, sans-serif;
+div.scroll-container::-webkit-scrollbar-thumb:hover{
+    background-color:#1a1919
 }
-
-.anothertip{
-    display:inline-block;
-    position:relative;
-}
-
-.anothertip .anothertip-text{
-    position: absolute;
-    visibility:hidden;
-    width:350px;
-    height: 250px;
-    background-color:rgba(91, 104, 112, 0.9);
-    color: var(--text-color);
-    border-radius: 10px;
-    opacity:0;
-    transition: opacity 1s;
-}
-
-.anothertip:hover .anothertip-text{
-    visibility:visible;
-    transition-delay:300ms;
-    opacity: 1;
-    z-index: 2;
-} 
-
-.anothertip-text p{
-    vertical-align:top;
-    text-align:center;
-    align-items:center;
-    text-wrap: balance;
-    font-size:15px;
-    padding-right:25px;
-    font-family: Open Sans, sans-serif;
-}
-
-
 /*SKILLS SECTION*/
 #Skills{
     padding-top: 100px;
@@ -254,11 +209,7 @@ div.icons{
     transition: all 500ms;
     margin-bottom:100px;
 }
-div.icons i:hover{
-    font-size: 110%;
-    font-size-adjust:50px;
-}
-div.software i{
+div.software{
     text-align: center;
     display: block;
     background-color: var(--background-color);
@@ -266,23 +217,6 @@ div.software i{
     color:var(--text-color);
     transition: all 500ms;
     margin-bottom:100px;
-}
-div.software:hover i{
-    font-size:110px;
-    font-size-adjust:50px;
-}
-
-.featured{
-    color: var(--text-color);
-    display:inline-block;
-    text-align: center;
-    margin-left:100px;
-}
-.featured i{
-    font-size:100px;
-    text-align:center;
-
-    display:block;
 }
 div.icons img{
     width:100px;
@@ -292,10 +226,7 @@ div.icons img{
     filter:invert(100%);
     transition: all 500 ms;
 }
-div.icons:hover img{
-    width: 110px;
-    height: 110px;
-}
+
 /*CONTACT SECTION*/
 
 #Contact{
@@ -339,7 +270,7 @@ div.iconic i{
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 40px;
     background-color:#1e241f
 }
 #Copyright a{
