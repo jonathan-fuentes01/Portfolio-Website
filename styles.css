@@ -1,7 +1,6 @@
 :root{
-    --text-color: #fffefe;
-    --background-color: #36443a;
-
+    --text-color: #463F3A;
+    --background-color: #F4F3EE;
 }
 
 *{
@@ -14,265 +13,67 @@ html{
     scroll-behavior: smooth;
 }
 html::-webkit-scrollbar{
-    width:16px;
+    width: 16px;
 }
 html::-webkit-scrollbar-thumb{
-    background-color:#303130;
+    background-color:rgb(20, 20, 20, .7);
     border-radius:10px;
 }
 html::-webkit-scrollbar-thumb:hover{
-    background-color:rgb(39, 37, 37)
-}
-html::-webkit-scrollbar-track{
-    background-color:#5e5e5e;
+    background-color:rgb(20, 20, 20);
     border-radius:10px;
 }
+html::-webkit-scrollbar-track{
+    background-color:rgba(74, 78, 75, 0.5);
+
+}
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--background-color);
+    overflow-y:scroll;
 }
 
-a{
-    color: var(--text-color);
+nav a{
+    color: #1f1d1d;
     text-decoration: none;
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
 nav{
     display: block;
     align-items: center;
-    text-align:right;
-    justify-content:center;
+    text-align: right;
     top:0;
     right:0;
     left:0;
     word-spacing: 10px;
     padding-right: 25px;
     padding-top: 15px;
-    background-color: rgba(143, 172, 135, 0.5); 
+    background-color: #A4B494;
+    opacity: 0.5; 
     height: 50px;
     position:fixed;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 15px;
-    font-weight: normal;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     z-index: 99;
 }
 
-hr{
-    color:#fffefe;
-    
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 200px;
-    width: 9%;
-    
-    height: 5px;
-
-    border-radius:10px;
-    background-color:#fffefe;
-}
-
-/*ABOUT ME SECTION */
-
-#About{
-    display:flex;
-    margin-top: 100px;
-}
-#About h1{
-    color: var(--text-color);
-    font-family: Montserrat;
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 6px;
-    margin-top:100px;
-    margin-left:100px;
-    margin-bottom: 20px;
-    display:flex;
-    justify-content: space-between;
-}
-#About h2{
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    margin-left: 100px;
-    letter-spacing: 6px;
-    margin-top: 5px;
-    font-size: 22px;
-
-}
-#About img{
-    margin-left:100px;
-    width:500px;
-    height:auto;
-    margin-top:100px;
-    border-radius:100px;
-    display:flex;
-    justify-content: space-between;
-}
-#About p{
-    display: block;
-    margin-left: 100px;
-    margin-top: 50px;
-    margin-right: 40px;
-    max-width:80%;
-    text-indent:50px;
-    font-family: Open Sans, sans-serif;
-    font-size: 20px;
-    color: var(--text-color);
-}
-#About hr{
-    visibility: hidden;
-    font-size: 0;
-    margin: 0 auto;
-}
-
-/*PROJECTS SECTION*/
-
-#Projects{
-    color: var(--text-color);
-    padding-top: 100px;
-   
-}
-
-#Projects h1{
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 6px;
-    font-family: 'Montserrat';
-}
-
-#Projects p{
-    margin-top: 50px;
-    font-size: 20px;
-    text-align:center;
-    font-family: Open Sans, sans-serif;
-    padding-left:20px;
-    margin-bottom: 50px;
-}
-
-div.scroll-container{
-    background-color:#2a3834;
-    overflow:auto;
-    white-space:nowrap;
-    padding: 100px;
-    margin-bottom: 50px;
-   
-}
-div.scroll-container img{
-    padding:10px;
-    width:500px;
-    height:550px;
-    
-    border-width:none;     
-    transition: all 500ms;
-
-}
-div.scroll-container img:hover{
-    padding:10px;
-    width: 550px;
-    height: 600px;
-}
-div.scroll-container::-webkit-scrollbar{
-    width:16px;
-}
-div.scroll-container::-webkit-scrollbar-thumb{
-    background-color:#555555;
-    border-radius:10px;
-}
-div.scroll-container::-webkit-scrollbar-thumb:hover{
-    background-color:#1a1919
-}
-/*SKILLS SECTION*/
-#Skills{
-    padding-top: 100px;
-}
-#Skills h1{
-    color: var(--text-color);
-    font-family: Montserrat;
-    letter-spacing: 6px;
-    font-size: 40px;
-    text-align: center;
-}
-#Skills h2{
-    color:var(--text-color);
-    text-align:center;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 6px;
-    margin-bottom: 50px;
-}
-div.icons{
-    text-align: center;
-    display: block;
-    background-color: var(--background-color);
-    font-size: 100px;
-    color:var(--text-color);
-    transition: all 500ms;
-    margin-bottom:100px;
-}
-div.software{
-    text-align: center;
-    display: block;
-    background-color: var(--background-color);
-    font-size: 100px;
-    color:var(--text-color);
-    transition: all 500ms;
-    margin-bottom:100px;
-}
-div.icons img{
-    width:100px;
-    height:100px;
-    vertical-align:middle;
-    padding-bottom: 20px;
-    filter:invert(100%);
-    transition: all 500 ms;
-}
-
-/*CONTACT SECTION*/
-
-#Contact{
-    padding-top: 10px;
-
-}
-#Contact h1{
-    
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    letter-spacing: 6px;
-    color: var(--text-color);
-    margin-top: 100px;
-}
-#Contact iframe{
-    display:block;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 5%;
-    margin-top: 5%
-}
-div.iconic{
-    margin-left: 30px;
-}
-div.iconic i{
-    display: flex;
-    color: var(--text-color);
-    font-size:40px;
-    text-align:left;
-}
-
-
-/*COPYRIGHT SECTION AND JUMP TO TOP*/
-
 #Copyright{
     display: flex;
-    font-family: 'Poppins', sans-serif;
-    font-size:17px;
-    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    background-color:#1e241f
+    height:50px;
+    background-color:#BCB8B1;
 }
 #Copyright a{
     text-decoration: underline;
+    color: var(--text-color);
+    margin-right:4px;
+}
+#Copyright p{
+    color: var(--text-color);
 }

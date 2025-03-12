@@ -1,0 +1,78 @@
+#Projects{
+    color: var(--text-color);
+    padding-top: 100px;
+   
+}
+
+#Projects h1{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 6px;
+    font-family: 'Montserrat';
+}
+#Projects hr{
+    margin-right: 46%;
+    margin-left:46%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+    height:4px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-color: #E0AFA0;
+    background-color:#E0AFA0;
+}
+
+#Projects p{
+    margin-top: 50px;
+    font-size: 16px;
+    text-align:center;
+    font-family: Open Sans, sans-serif;
+    padding-left:20px;
+    margin-bottom: 10px;
+}
+div.scroll-container{
+    background-color:#8A817C;
+    overflow:auto;
+    white-space:nowrap;
+    padding: 2%;
+    margin-top:5%;
+    ;
+}
+div.scroll-container::-webkit-scrollbar{
+    width:10px;
+}
+div.scroll-container::-webkit-scrollbar-thumb{
+    background-color:rgb(20, 20, 20, .7);
+    border-radius:10px;
+}
+div.scroll-container::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(20, 20, 20);
+    border-radius:10px;
+}
+div.scroll-container::-webkit-scrollbar-track{
+    background-color:rgb(189, 181, 181);
+    display:none;
+    border-radius:10px;
+}
+div.scroll-container img{
+    padding:10px;
+    width:300px;
+    height:330px;
+    
+    border-width:none;     
+    transition: all 800ms;
+
+}
+div.scroll-container img:hover{
+    padding:10px;
+    width: 350px;
+    height: 400px;
+}
+#Copyright{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+}

@@ -1,0 +1,39 @@
+#Contact{
+    padding-top: 10px;
+}
+#Contact h1{
+    
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    letter-spacing: 6px;
+    color: var(--text-color);
+    margin-top: 100px;
+}
+#Contact hr{
+    margin-right: 46%;
+    margin-left:46%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+    height:4px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-color: #E0AFA0;
+    background-color:#E0AFA0;
+}
+#Contact iframe{
+    margin-bottom: 100px;
+    margin-left:420px;
+}
+div.iconic{
+    margin-left: 30px;
+}
+div.links i{
+    display: flex;
+    color: var(--text-color);
+    font-size: 30px;
+    text-align:left;
+
+}

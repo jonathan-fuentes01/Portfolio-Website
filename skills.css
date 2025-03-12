@@ -1,0 +1,54 @@
+
+/*SKILLS SECTION*/
+#Skills{
+    padding-top: 100px;
+}
+#Skills h1{
+    color: var(--text-color);
+    font-family: Montserrat;
+    letter-spacing: 6px;
+    font-size: 25px;
+    text-align: center;
+}
+#Skills h2{
+    color:var(--text-color);
+    text-align:center;
+    font-size:22px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+}
+#Skills hr{
+    margin-right: 46%;
+    margin-left:46%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+    height:4px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-color: #E0AFA0;
+    background-color:#E0AFA0;
+}
+div.icons{
+    text-align: center;
+    display: block;
+    background-color: var(--background-color);
+    font-size: 600%;
+    color:var(--text-color);
+    transition: all 500ms;
+    margin-bottom:200px;
+}
+
+div.software{
+    display: flex;
+    justify-content: center;
+    gap:2%;
+    align-items:center;
+    background-color: var(--background-color);
+    font-size: 600%;
+    color:var(--text-color);
+    transition: all 500ms;
+    margin-bottom:100px;
+}

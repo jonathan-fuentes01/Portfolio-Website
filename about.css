@@ -1,0 +1,63 @@
+
+#About{
+    margin-top: 100px;
+    display:block;
+}
+#About p{
+    font-family:'Open Sans', sans-serif;
+
+    font-size:16px;
+    text-indent: 15px;
+    word-spacing:2.56px;
+    line-height:24px;
+
+    margin-bottom:2%;
+    margin-right:20%;
+    margin-left:20%;
+    margin-top:20px;
+
+    display:block;
+}
+#About hr{
+    margin-right: 47%;
+    margin-left:47%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+    height:4px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-color: #E0AFA0;
+    background-color:#E0AFA0;
+}
+#About a{
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+
+
+    background-color:#A4B494;
+    text-decoration:none;
+    
+    margin-right:40%;
+    margin-left:40%;
+    margin-bottom:5%;
+
+    padding: 1%;
+    border-radius:15px;
+
+    font-family:'Montserrat';
+    font-size:22px;
+
+    color:var(--text-color);
+}
+#About img{
+    width:20%;
+    height:20%;
+    
+    margin-left:40.5%;
+
+    border-radius:15px;
+}
