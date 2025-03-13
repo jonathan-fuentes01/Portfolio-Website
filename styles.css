@@ -1,6 +1,6 @@
 :root{
     --text-color: #463F3A;
-    --background-color: #F4F3EE;
+    --background-color: #f7ead9;
 }
 
 *{
@@ -67,7 +67,7 @@ nav{
     align-items: center;
     justify-content: center;
     height:50px;
-    background-color:#BCB8B1;
+    background-color:#c7bca8;
 }
 #Copyright a{
     text-decoration: underline;

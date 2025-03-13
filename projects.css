@@ -70,9 +70,10 @@ div.scroll-container img:hover{
     width: 350px;
     height: 400px;
 }
-#Copyright{
-    position:fixed;
-    bottom:0;
-    left:0;
-    right:0;
+div.pdf iframe{
+    display:none;
+
+}
+div.scroll-container img:hover + .pdf{
+    display:block;
 }

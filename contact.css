@@ -24,8 +24,8 @@
     background-color:#E0AFA0;
 }
 #Contact iframe{
-    margin-bottom: 100px;
-    margin-left:420px;
+    margin: auto;
+    display:block;
 }
 div.iconic{
     margin-left: 30px;
