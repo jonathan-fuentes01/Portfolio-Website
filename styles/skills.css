@@ -1,0 +1,75 @@
+/*SKILLS SECTION*/
+#Skills{
+    padding-top: 100px;
+}
+#Skills h1{
+    color: var(--text-color);
+    font-family: Montserrat;
+    letter-spacing: 4px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.skills-subtitle{
+    text-align:center;
+    font-size:16px;
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+#Skills hr{
+    margin-right: 45%;
+    margin-left:45%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+    height:2px;
+
+    background-color: #E0AFA0;
+    border-radius: 5px;
+}
+.skill-container{
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.all-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.all-section h2{
+  font-size: 18px;
+}
+
+.languages-section, .libraries-section, .frameworks-section{
+  color: var(--text-color);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.item img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,15 @@
+#Home{
+    background-color: var(--text-color);
+}
+.home-title{
+    font-size: 90px;
+    color: white;
+    text-align:left;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+#Home p{
+    font-size: 90px;
+    color:white;
+    padding-bottom: 1000px
+}

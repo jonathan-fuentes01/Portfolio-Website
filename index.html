@@ -14,104 +14,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
     <title>Jonathan's Portfolio</title>
 </head>
 <body>
-    <!-- NAV BAR -->
-    <nav>
-            <a href="#">ABOUT</a>
-            <a href="#Projects">PROJECTS</a>
-            <a href="#Skills">SKILLS</a>
-            <a href="#Contact">CONTACT</a>
-
-    </nav>
-
-    <main>
-        <!-- Section 1: About Me -->
+    <main>        
+        <nav>
+            <div class = "nav-container">
+                <a class = "Home"href="#Home">Home</a>
+                <a class = "About" href="#About">About</a>
+                <a class = "Projects" href="#Projects">Projects</a>
+                <a class = "Skills" href="#Skills">Skills</a>
+                <a class = "Contact" href="#Contact">Contact</a>
+            </div>
+        </nav>
+        
         <section id="About">
-                <img src="images/Jonathan Fuentes.JPG" alt="Jonathan Fuentes">
-                <p>Hello, my name is Jonathan Fuentes. I am a current Computer Engineering student at Cal State University, Long Beach. My passion for engineering started in high school through an EE class required for graduation. I learned how to code in C and was introduced to the subject of CE. </p>
-                <p>I am able to code in object-oriented languages with knowledge of data structures (Java, C++), have worked with HDLs (Verilog/SystemVerilog), and markup languages (HTML/CSS). I have worked with multiple operating systems primarily Windows and Linux (Fedora, but familiar with Ubuntu). I am also familiar with assembly language, having taken a class for MIPS architecture and am currently learning RISC-V. Currently, I am figuring out what career path best suits me and I’m using my studies as a way to explore my different options.</p>
-            <hr>
-            <span>
-                <a href="#Contact">GET IN TOUCH</a>
-            </span>
-
-        </section>  
-            <!-- Section 2: Projects -->
-            <section id="Projects">
-                <h1>PROJECTS</h1>
-                <hr>
-                <p>A comprehensive list of all the projects I've done during my undergraduate studies. Click on them to learn more! :)</p>
-                <div class="scroll-container">
-                    
-                    <img src="images/personal website.png" alt="Personal Website">
-
-                    <a href="https://docs.google.com/document/d/1cXpOWfKUyshXRODzczjv6Z28f60al0CqFdgyOjyHP6Y/edit?usp=sharing" target="_blank">
-                            <img src="images/FPGA board.jpg" alt="A picture of a FPGA Board">    
-                    </a>
-                    <a href="https://docs.google.com/document/d/12WvJWFfLujrIYVqRR_A1XkYuw8trSGFNiIsIin_KVj0/edit?usp=sharing" target="_blank">
-                        <img src="images/Keyboard 3D Model.png" alt="Keyboard 3D Model">
-                    </a>
-                   <img src="images/MORE TO COME SOON +.png" alt="more to come soon section">
+            <div class="about-container">
+                <div class = "about-left">
+                    <h1 class = "name">Jonathan Fuentes</h1>
                 </div>
-                <div class="pdf">
-                    <iframe src="documents/Portfolio Website Project.pdf" frameborder="0"></iframe>
+                <div class="about-right">
+                    <p></p>
+                    <button class = "download-resume">
+                        Download Resume
+                    </button>
+                </div>    
+            </div>
+            
+        </section>  
+        <section id="Projects">
+            <h1 class = "projects-title">PROJECTS</h1>
+            <p class = 'project-bio'>A comprehensive list of all the projects I've done during my undergraduate studies. Scroll through and click on them to learn more! :)</p>
+            <hr>
+            <div class = "gallery-buttons">
+                <img class = "js-back-button" src="images/back-button.png" alt="">
+                    <div class="gallery">
+                        <div>
+                            <span><img src="images/Keyboard 3D Model.png" alt=""></span>
+                            <span><img src="images/MORE TO COME SOON +.png" alt=""></span>
+                            <span><img src="images/nexys-a7-100t.jpg" alt=""></span>
+                        </div>
+                        <div>
+                            <span><img src="images/Jonathan Fuentes.JPG" alt=""></span>
+                            <span><img src="images/personal website.png" alt=""></span>
+                            <span><img src="images/Jonathan Fuentes.JPG" alt=""></span>
+                        </div>
+                    </div>
+                <img class = "js-forward-button" src="images/forward-button.png" alt="">
+            </div>
+            
+        </section>
+
+        <section id = "Skills">
+            <h1>TECHNOLOGY</h1>
+            <h2 class = "skills-subtitle">Languages, Libraries, and Tools</h2>
+            <div class = "skill-container">
+                <div class = "all-section languages-section">
+                    <h2>LANGUAGES</h2>
+                    <hr>
+                    <div class = "grid language-container">    
+                    </div>
+                </div>
+                <div class = "all-section libraries-section">
+                    <h2>LIBRARIES/FRAMEWORKS</h2>
+                    <hr>
+                    <div class = "grid libraries-container">    
+                    </div>
                 </div>
                 
-            </section>
-             <!-- Section 4: Skills -->
-        <section id="Skills">
-            <h1>SKILLS</h1>
-            <hr>
-                <h2>USED/KNOWN OS</h2>
-                <div class="software">
-                    <i class="fa-brands fa-microsoft" title="Windows 10/11"></i>
-                    <i class="fa-brands fa-fedora" title="Fedora"></i>
-                </div>
-            
-            <h2>LANGUAGES</h2>
-            <div class="icons">
-                <i class="fa-brands fa-html5" title="HTML5"></i>
-                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
-                <i class="fa-brands fa-python" title="Python"></i>
-                <i class="fa-solid fa-c" title="C/C++"></i>
-                <i class="fa-brands fa-java" title="Java"></i>
-            </div>           
-        </section>
-        <!-- Section 5: Contact -->
+                <div class = "all-section frameworks-section">
+                    <h2>TOOLS</h2>
+                    <hr>
+                    <div class = "grid">    
+                        <div class = 'item'>
+                            <img src="images/github.png" alt=""><span class = "label">Git/Github</span>
+                        </div>
+                        <div class = 'item'>
+                            <img src="images/kicad.png" alt=""><span class = "label">KiCAD</span>
+                        </div>
+                        <div class = 'item'>
+                            <img src="images/fusion 360.png" alt=""><span class = "label">Fusion 360</span>
+                        </div>
+                        <div class = 'item'>
+                            <img src="images/javascript.png" alt=""><span class = "label">JavaScript</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         <section id="Contact">
             <h1>CONTACT ME</h1>
             <hr>
-                <div class="iconic">
-                    <iframe id="google_form" src="https://docs.google.com/forms/d/e/1FAIpQLSdsmyfrh2FwRfr4dkRV3ou73Isp1z-jRB_DYiq4g6GIXO40RQ/viewform?embedded=true" width="1000" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                <div>    
-                <div class="links">    
-                    <a href="https://www.linkedin.com/in/jonathan-fuentes01" target="_blank" title="Linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:jonathanfuentes2021@gmail.com" target="_blank" title="Email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-           
-            
-        </section>
+            <div class = "contact-container"> 
+                <input class = "js-name-input" type="text" placeholder = "Name">
+                <input class = "js-email-input" type="text" placeholder = "Email">
+                <input class = "js-text-input" type="text" placeholder = "Write a message...">   
+                <button class = "submit-button js-submit-button">Submit</button>
+            </div>
+            <div>
 
-        <!-- COPYRIGHT SECTION -->
+            </div>
 
         <section id="Copyright">
-            <a href="#">Jump to Top</a>
-            <p> | &copy; 2025 Jonathan Fuentes. All rights reserved.</p>
-        </section>  
+            <div class = "copyright-container">
+                <div class = "copyright-left">
+                    <a href="#">Jump to Top</a>
+                </div>
+                <div class = "copyright-right">
+                    <p>| &copy; 2025 Jonathan Fuentes. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+
+        <script src = "data/technology.js"></script>
+        <script src = "data/contact.js"></script>
+        <script src = "scripts/website.js"></script>
     </main>
 </body>
-</html>

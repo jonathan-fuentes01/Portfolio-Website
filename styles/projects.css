@@ -1,0 +1,69 @@
+#Projects{
+    color: var(--text-color);
+    padding-top: 100px;
+   
+}
+.projects-title{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#Projects hr{
+    margin-right: 46%;
+    margin-left:46%;
+    margin-top: 1%;
+
+    height:4px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-color: #E0AFA0;
+    background-color:#E0AFA0;
+}
+
+.project-bio{
+    font-size: 16px;
+    text-align:center;
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 40px;
+}
+.gallery{
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior:smooth;
+    background-color:#E0AFA0;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+    display:none;
+}
+.gallery-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.js-back-button, .js-forward-button{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
