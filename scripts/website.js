@@ -2,6 +2,10 @@ scrollButtonHandler();
 horScrolling();
 navbarHighlight();
 
+import {libraries, technology, tools} from '../data/technology.js';
+import {contact, keepInfo} from '../data/contact.js';
+import {gallery1} from '../data/gallery.js';
+
 function scrollButtonHandler(){ 
     let scrollContainer = document.querySelector('.gallery');
     let backButton = document.querySelector('.js-back-button');
@@ -47,37 +51,33 @@ function navbarHighlight(){
     })
 }
 
-function keepInfo(){
-    let nameElement = document.querySelector('.js-name-input');
-    const nameInput = nameElement.value;
+let galleryHTML = "";
 
-    let emailElement = document.querySelector('.js-email-input');
-    const emailInput = emailElement.value;
+gallery1.forEach( (gallery1) => {
+    galleryHTML += `
+        <button class = "gallery-image-button js-gallery-button">
+        <span>
+            <a href = "${gallery1.source}" download>
+                <img src="${gallery1.image}" alt="">
+            </a>
+        </span>
+        </button>
+    `;
+});
 
-    let textElement = document.querySelector('.js-text-input');
-    const textInput = textElement.value;
-
-    contact.push({
-        name: nameInput,
-        email: emailInput,
-        text: textInput
-    });
-    nameElement.value = "";
-    emailElement.value = "";
-    textElement.value = ""
-}
-
-document.querySelector('.js-submit-button')
-    .addEventListener('click', () =>{
-        keepInfo();
-        console.log(contact);
-    });
+document.querySelector('.js-gallery')
+    .innerHTML = `
+        <div>
+            ${galleryHTML}
+        </div>
+        `;
 
 let languagesHTML = "";
 technology.forEach( (technology) => {
         languagesHTML = languagesHTML + `
             <div class = 'item'>
-                <img src="${technology.image}" alt=""><span class = "label">${technology.name}</span>
+                <img src="${technology.image}" alt="">
+                <span class = "label">${technology.name}</span>
             </div>
             `
 });
@@ -91,7 +91,19 @@ libraries.forEach( (libraries) => {
             `
 });
 
+let toolsHTML = ""
+tools.forEach((tools) => {
+    toolsHTML += `
+        <div class = 'item'>
+            <img src = "${tools.image}" alt = "">
+            <span class = "label">${tools.name}</span>
+        </div>
+    `
+});
+
 document.querySelector('.language-container')
     .innerHTML = languagesHTML;
 document.querySelector('.libraries-container')
-    .innerHTML = librariesHTML
+    .innerHTML = librariesHTML;
+document.querySelector('.tools-container')
+    .innerHTML = toolsHTML;

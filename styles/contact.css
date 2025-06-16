@@ -8,7 +8,7 @@
     font-size: 22px;
     letter-spacing: 6px;
     color: var(--text-color);
-    margin-top: 100px;
+    margin-top: 200px;
 }
 #Contact hr{
     margin-right: 46%;
@@ -25,23 +25,23 @@
 }
 .contact-container{
     display:flex;
+    min-width:0;
     flex-direction: column;
     align-content: space-between;
-    text-align:center;
     align-items: center;
     justify-content:center;
-    gap: 10px;
+    gap: 15px;
 
     font-size: 16px;
-    margin-bottom: 20px;
-    max-width: 2000px;
+    margin-bottom: 50px;
 }
 .copyright-container{
     display: flex;
     flex-direction: row;
+    align-content: space-between;
     align-items: center;
-    text-align: center;
-    gap: 10px;
+    justify-content: center;
+
     justify-content: center;
     background-color:rgb(87, 78, 68);
     color: white;
@@ -51,6 +51,42 @@
     text-decoration: underline;
     color: white;
 }
+.name-input{
+    width: 700px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(152, 170, 139);
+}
+.email-input{
+    width: 700px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(152, 170, 139);
+}
+.text-input{
+    height:200px;
+    width: 700px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:rgb(152, 170, 139);
+    margin-bottom: 20px;
+
+}
 .submit-button{
     cursor:pointer;
+    border: none;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    padding: 10px 16px 10px 16px;
+    background-color:#E0AFA0;
+    color: white;
+    margin-bottom: 10%;
+}
+.submit-button:hover{
+    background-color:#a37e73;
 }

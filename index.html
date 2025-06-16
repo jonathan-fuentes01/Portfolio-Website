@@ -30,7 +30,6 @@
     <main>        
         <nav>
             <div class = "nav-container">
-                <a class = "Home"href="#Home">Home</a>
                 <a class = "About" href="#About">About</a>
                 <a class = "Projects" href="#Projects">Projects</a>
                 <a class = "Skills" href="#Skills">Skills</a>
@@ -43,10 +42,16 @@
                 <div class = "about-left">
                     <h1 class = "name">Jonathan Fuentes</h1>
                 </div>
+                <div>
+                    <p class = "student-title">Computer Engineering Student</p>
+                </div>
+                <div>
+                    <img class = "picture_me"src="images/Jonathan Fuentes.JPG" alt="">
+                </div>
                 <div class="about-right">
                     <p></p>
                     <button class = "download-resume">
-                        Download Resume
+                        <a class = "download-res" href="documents/Jonathan_Fuentes_Resume.pdf" download>Download resume</a>
                     </button>
                 </div>    
             </div>
@@ -58,17 +63,7 @@
             <hr>
             <div class = "gallery-buttons">
                 <img class = "js-back-button" src="images/back-button.png" alt="">
-                    <div class="gallery">
-                        <div>
-                            <span><img src="images/Keyboard 3D Model.png" alt=""></span>
-                            <span><img src="images/MORE TO COME SOON +.png" alt=""></span>
-                            <span><img src="images/nexys-a7-100t.jpg" alt=""></span>
-                        </div>
-                        <div>
-                            <span><img src="images/Jonathan Fuentes.JPG" alt=""></span>
-                            <span><img src="images/personal website.png" alt=""></span>
-                            <span><img src="images/Jonathan Fuentes.JPG" alt=""></span>
-                        </div>
+                    <div class="gallery js-gallery">
                     </div>
                 <img class = "js-forward-button" src="images/forward-button.png" alt="">
             </div>
@@ -95,19 +90,7 @@
                 <div class = "all-section frameworks-section">
                     <h2>TOOLS</h2>
                     <hr>
-                    <div class = "grid">    
-                        <div class = 'item'>
-                            <img src="images/github.png" alt=""><span class = "label">Git/Github</span>
-                        </div>
-                        <div class = 'item'>
-                            <img src="images/kicad.png" alt=""><span class = "label">KiCAD</span>
-                        </div>
-                        <div class = 'item'>
-                            <img src="images/fusion 360.png" alt=""><span class = "label">Fusion 360</span>
-                        </div>
-                        <div class = 'item'>
-                            <img src="images/javascript.png" alt=""><span class = "label">JavaScript</span>
-                        </div>
+                    <div class = "grid tools-container">  
                     </div>
                 </div> 
             </div>
@@ -116,8 +99,8 @@
             <hr>
             <div class = "contact-container"> 
                     <input class = "js-name-input name-input" type="text" placeholder = "Name">
-                    <input class = "js-email-input" type="text" placeholder = "Email">
-                    <input class = "js-text-input" type="text" placeholder = "Write a message...">   
+                    <input class = "js-email-input email-input" type="text" placeholder = "Email">
+                    <input class = "js-text-input text-input" type="text" placeholder = "Write a message...">   
                     <button class = "submit-button js-submit-button">Submit</button>
             </div>
             <div>
@@ -134,9 +117,6 @@
                 </div>
             </div>
         </section>
-
-        <script src = "data/technology.js"></script>
-        <script src = "data/contact.js"></script>
-        <script src = "scripts/website.js"></script>
+        <script type = "module" src = "scripts/website.js"></script>
     </main>
 </body>
